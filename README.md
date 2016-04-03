@@ -3,7 +3,7 @@
 A journey inside the heart that shows the potential for using virtual reality in the doctor's office and the classroom.
 
 ##What it does
-Ever wanted to know what's really happening inside your body when your sick? See how your lifestyle choices impact your anatomy with newly developing virtual reality technology. We used a Oculus Rift headset and Leap Motion technologies within Unity to allow a patient to take a tour of the human heart. Integrating Leap Motion allows the user to move freely throughout the body and observe the differences between a healthy and unhealthy organ with simple hand gestures.
+Ever wanted to know what's really happening inside your body when your sick? See how your lifestyle choices impact your anatomy with newly developing virtual reality technology. We used an Oculus Rift headset and Leap Motion technologies within Unity to allow a patient to take a tour of the human heart. Integrating Leap Motion allows the user to move freely throughout the body and observe the differences between a healthy and unhealthy organ with simple hand gestures.
 
 ##Challenges we ran into
 Integrating leap motion into Unity alongside Oculus proved to be a new challenge since this was our first experience using virtual reality technology. We also discovered that much of the virtual reality software is built for Windows, rather than Mac (which we were using).
