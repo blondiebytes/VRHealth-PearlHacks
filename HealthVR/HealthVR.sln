@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{A854E2EB-C938-3487-8A72-3AB60CC0926D}") = "HealthVR", "Assembly-CSharp.csproj", "{A3238744-2EDD-C121-C12B-F189E6CBC675}"
+EndProject
+Project("{A854E2EB-C938-3487-8A72-3AB60CC0926D}") = "HealthVR", "Assembly-CSharp-Editor.csproj", "{ACD59DCE-678B-2B4B-9FD4-1B0D0251F865}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3238744-2EDD-C121-C12B-F189E6CBC675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3238744-2EDD-C121-C12B-F189E6CBC675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3238744-2EDD-C121-C12B-F189E6CBC675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3238744-2EDD-C121-C12B-F189E6CBC675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD59DCE-678B-2B4B-9FD4-1B0D0251F865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD59DCE-678B-2B4B-9FD4-1B0D0251F865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD59DCE-678B-2B4B-9FD4-1B0D0251F865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD59DCE-678B-2B4B-9FD4-1B0D0251F865}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
