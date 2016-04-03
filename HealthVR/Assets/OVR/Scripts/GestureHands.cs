@@ -26,7 +26,7 @@ public class GestureHands : MonoBehaviour {
 	}
 
 	void DeactivateChildren(GameObject g, bool a) {
-		g.activeSelf = a;
+		g.SetActive(a);
 		foreach (Transform child in g.transform) {
 			DeactivateChildren (child.gameObject, a);
 		}
