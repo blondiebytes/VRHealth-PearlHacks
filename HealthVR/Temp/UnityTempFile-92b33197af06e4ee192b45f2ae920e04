@@ -13,9 +13,9 @@
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'
 -r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'
+-r:'Assets/Plugins/LeapCSharp.NET3.5.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
 -r:'/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll'
--r:'Assets/Plugins/LeapCSharp.NET3.5.dll'
 -define:UNITY_5_3_OR_NEWER
 -define:UNITY_5_3_4
 -define:UNITY_5_3

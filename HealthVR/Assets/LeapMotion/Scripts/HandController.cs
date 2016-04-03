@@ -88,6 +88,7 @@ public class HandController : MonoBehaviour {
   private long prev_graphics_id_ = 0;
   private long prev_physics_id_ = 0;
   
+
   /** Draws the Leap Motion gizmo when in the Unity editor. */
   void OnDrawGizmos() {
     // Draws the little Leap Motion Controller in the Editor view.
