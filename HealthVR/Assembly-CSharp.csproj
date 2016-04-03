@@ -145,6 +145,7 @@
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\LeapMotion\Shaders\RimShading.shader" />
+     <None Include="Assets\Models\Materials\Velvet\Velvet.shader" />
      <None Include="Assets\LeapMotion\Dependencies.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
