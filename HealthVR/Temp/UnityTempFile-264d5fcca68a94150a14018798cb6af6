@@ -154,6 +154,7 @@
 'Assets/OVR/Moonlight/Scripts/Utils/OVRMonoscopic.cs'
 'Assets/OVR/Moonlight/Scripts/Utils/OVRResetOrientation.cs'
 'Assets/OVR/Moonlight/Scripts/Utils/OVRWaitCursor.cs'
+'Assets/OVR/Scripts/GestureHands.cs'
 'Assets/OVR/Scripts/OVRCameraRig.cs'
 'Assets/OVR/Scripts/OVRCommon.cs'
 'Assets/OVR/Scripts/OVRDisplay.cs'

@@ -1,0 +1,63 @@
+﻿using UnityEngine;
+using System.Collections;
+using Leap;
+
+public class GestureHands : MonoBehaviour {
+
+	Controller controller;
+	public GameObject pointOne;
+	public GameObject pointTwo;
+	public GameObject cameraVR;
+	public GameObject hands;
+	bool hasTraveled;
+	int isReadyToChange;
+
+	// Use this for initialization
+	void Start () {
+		controller = new Controller ();
+		controller.EnableGesture (Gesture.GestureType.TYPE_SWIPE);
+		controller.EnableGesture (Gesture.GestureType.TYPE_KEY_TAP);
+		hasTraveled = false;
+		isReadyToChange = 0;
+		// controller.Config.SetFloat ("Gesture.Swipe.MinLength", 200.0f);
+		// controller.Config.SetFloat("Gesture.Swipe.MinVelocity", 750f);
+		// controller.Config.Save ();
+	}
+
+	// Update is called once per frame
+	void Update () {
+		Frame frame = controller.Frame ();
+		GestureList gestures = frame.Gestures ();
+		if (isReadyToChange > 40) {
+			for (int i = 0; i < gestures.Count; i++) {
+				Gesture g = gestures [i];
+				if (g.Type == Gesture.GestureType.TYPE_KEY_TAP) {
+					Debug.Log ("Key Tap");
+					if (hasTraveled) {
+						// -0.72, -0.97, 0.81
+						// 0, 0, 0
+						//Quaternion.
+						//hands.gameObject.transform.position = new Vector3(-0.72f, -0.97f, 0.81f);
+						cameraVR.gameObject.transform.position = new Vector3 (pointOne.transform.position.x,
+							pointOne.transform.position.y, pointOne.transform.position.z);
+						hasTraveled = false;
+					} else {
+						// 0.72, 0.97, -0.81
+						// 0, 90, 0
+						//hands.gameObject.transform.position = new Vector3(0.72f, 0.97f, -0.81f);
+						cameraVR.transform.position = new Vector3 (pointTwo.transform.position.x,
+							pointTwo.transform.position.y, pointTwo.transform.position.z);
+						hasTraveled = true;
+					}
+				} else if (g.Type == SwipeGesture.ClassType ()) {
+					// transition to other scene
+					Debug.Log ("Swipe");
+				}
+				isReadyToChange = 0;
+			}
+		} else {
+			isReadyToChange++;
+		}
+
+	}
+}
