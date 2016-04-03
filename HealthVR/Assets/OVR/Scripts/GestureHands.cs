@@ -9,6 +9,7 @@ public class GestureHands : MonoBehaviour {
 	public GameObject pointTwo;
 	public GameObject cameraVR;
 	public GameObject hands;
+	public GameObject plaque;
 	int whereAt;
 	int isReadyToChange;
 
@@ -22,6 +23,13 @@ public class GestureHands : MonoBehaviour {
 		// controller.Config.SetFloat ("Gesture.Swipe.MinLength", 200.0f);
 		// controller.Config.SetFloat("Gesture.Swipe.MinVelocity", 750f);
 		// controller.Config.Save ();
+	}
+
+	void DeactivateChildren(GameObject g, bool a) {
+		g.activeSelf = a;
+		foreach (Transform child in g.transform) {
+			DeactivateChildren (child.gameObject, a);
+		}
 	}
 
 	// Update is called once per frame
@@ -52,6 +60,7 @@ public class GestureHands : MonoBehaviour {
 				} else if (g.Type == SwipeGesture.ClassType ()) {
 					// transition to other scene
 					Debug.Log ("Swipe");
+					DeactivateChildren (plaque, !plaque.activeSelf);
 				}
 				isReadyToChange = 0;
 			}
